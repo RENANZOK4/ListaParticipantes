@@ -1,0 +1,106 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .course {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .course img {
+            max-width: 100px;
+            margin-right: 20px;
+        }
+        .footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #3498db;
+            color: #fff;
+        }
+       /* Estilos anteriores... */
+
+       .user-profile {
+           display: flex;
+           align-items: center;
+           cursor: pointer;
+           position: relative; /* Adicionado para posicionar corretamente a caixa de log-out */
+       }
+
+
+       .user-profile {
+           display: grid;
+           align-items: center;
+           cursor: pointer;
+           position: relative;
+           justify-items: end;
+           justify-content: flex-end;
+       }
+
+       .user-avatar {
+           width: 40px;
+           height: 40px;
+           border-radius: 50%;
+           margin-right: 10px;
+       }
+
+       .logout-box {
+           display: none;
+           position: absolute;
+           top: 100%; /* Posiciona abaixo da foto do usuário */
+           right: 0;
+           width: 160px; /* Ajuste de largura para a caixa de log-out */
+           padding: 10px;
+           background-color: #fff;
+           border: 1px solid #ddd;
+           border-radius: 5px;
+           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+           z-index: 1; /* Para garantir que a caixa de log-out fique acima do conteúdo */
+       }
+
+       .user-profile:hover .logout-box {
+           display: block;
+       }
+       .logout-box {
+         background-color: #5e57a9f2;
+         border: 1px solid #ccc;
+         padding: 20px;
+         width: 200px;
+         border-radius: 5px;
+         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+       }
+
+       .logout-box p {
+         font-size: 16px;
+         margin-bottom: 10px;
+       }
+
+       .logout-box a {
+         display: block;
+         text-decoration: none;
+         color: #333;
+         padding: 5px 0;
+       }
+
+       .logout-box a:hover {
+         background-color: #ddd;
+       }
+
